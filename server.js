@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 require('dotenv').config(); // Pour charger les variables d'environnement
 
 // Configuration MongoDB (sans options dépréciées)
-const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/yourdb';
+const mongoURI = process.env.MONGO_URI ;
 mongoose.connect(mongoURI)
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => {
